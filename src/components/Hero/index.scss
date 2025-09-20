@@ -15,9 +15,11 @@
     .content-left {
         z-index: 1;
       .flow {
-        color: rgb(226 232 240);
-        background: rgb(24 28 40);
+        // color: rgb(226 232 240);
+        // background: rgb(24 28 40);
         border: 1px solid rgb(0 255 157 / 0.2);
+            background: linear-gradient(90deg, #00ff9d, #00b36b);
+    color: black;
         display: flex;
         align-items: center;
         .icon {
@@ -30,7 +32,7 @@
 
     .btns {
       display: flex;
-      justify-content: center;
+      justify-content: left;
     }
 
     .description {

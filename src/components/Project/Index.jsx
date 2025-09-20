@@ -4,10 +4,13 @@ import './Index.scss'
 
 export default function Project(props) {
   const [count, setCount] = useState(0)
-  const { project, key } = props;
+  const { project, index } = props;
 
   return (
-    <div className="project-item" key={project.name}>
+    <div className={ 
+          `project-item 
+          ${index === 0 ? 'active-def': ''}
+        `} key={project.name} >
       <div className="name">
         {project.name}
       </div>

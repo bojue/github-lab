@@ -26,7 +26,6 @@ function Projects() {
       name: "Web-Editor",
       info: '可视化组态编辑器',
       techStack: ['Angular', 'TypeScript'],
-      github: "https://github.com/bojue/Web-Editor",
       demo_img: webEditor,
       demo_url: 'https://bojue.github.io/Web-Editor',
       demo_state: false
@@ -61,8 +60,8 @@ function Projects() {
       <section className='projects'>
         <div className="content">
           {
-            projects.map(project => (
-              <Project project={project} key={project.name} />
+            projects.map((project, index) => (
+              <Project project={project} key={project.name} index={index}/>
             ))
           }
         </div>

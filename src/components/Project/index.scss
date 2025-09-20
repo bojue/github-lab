@@ -1,12 +1,18 @@
 .project-item {
   display: flex;
-  width: calc(33.33% - 62px);
+  width: calc(33.33% - 64px);
   height: 368px;
   flex-direction: column;
   background: rgb(24 28 40 / var(--tw-border-opacity, 1));
   border-radius: 8px;
   padding: 24px;
   position: relative;
+  &.active-def, &:hover {
+    border:1px solid #00b36b;
+  }
+  &.active-def {
+    box-shadow: 0px 0px 12px #00b36b;
+  }
 
   .name {
     color: rgba(249, 249, 249, 1);
