@@ -4,6 +4,9 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' 
+  ? '/github-lab/'  // 生产环境（如GitHub Pages）
+  : '/',   
   plugins: [react()],
   resolve: {
     alias: {
