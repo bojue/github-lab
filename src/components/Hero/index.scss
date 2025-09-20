@@ -1,0 +1,57 @@
+.hero {
+  color: rgb(226 232 240);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  .content {
+    width: 72rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .content-left {
+      .flow {
+        color: rgb(226 232 240);
+        background: rgb(24 28 40);
+        border: 1px solid rgb(0 255 157 / 0.2);
+        display: flex;
+        align-items: center;
+        .icon {
+          font-size: 20px;
+          margin-top: 3px;
+          padding: 4px;
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      justify-content: center;
+    }
+
+    .description {
+      font-size: 20px;
+      color: rgb(148 163 184);
+      margin: 30px 0;
+      
+    }
+  }
+
+  .title {
+    font-size: 57px;
+    font-weight: 700;
+
+    .lab {
+      background: linear-gradient(90deg, #00ff9d, #00b36b);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.content-right {
+  .right-content {
+    color:#00b36b;
+  }
+}
+

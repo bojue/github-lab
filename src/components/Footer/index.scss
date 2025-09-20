@@ -1,0 +1,22 @@
+.footer {
+  .circle {
+    position: absolute;
+    top: 204px;
+    left: -100px;
+    width: 151px;
+    height: 151px;
+    border-radius: 50%;
+    background: #ffd166;
+  }
+
+  .square {
+    position: absolute;
+    top: -40px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background: #646cff;
+    transform: rotate(30deg);
+  }
+
+}

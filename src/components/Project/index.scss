@@ -1,0 +1,133 @@
+.project-item {
+  display: flex;
+  width: calc(33.33% - 62px);
+  height: 368px;
+  flex-direction: column;
+  background: rgb(24 28 40 / var(--tw-border-opacity, 1));
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+
+  .name {
+    color: rgba(249, 249, 249, 1);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+  }
+
+  .tags-list {
+    margin: 10px 0 16px;
+    text-align: left;
+    font-size: 13px;
+
+    .tag {
+      margin-right: 12px;
+      padding: 4px 8px;
+      border-radius: 12px;
+      color: rgba(249, 249, 249, 1);
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid #ccc;
+
+      &.Angular {
+        background: #dd003120;
+        border-color: #dd003180;
+        color: #dd0031;
+      }
+
+      &.Vue {
+        background: #4fc08d20;
+        border-color: #4fc08d40;
+        color: #4fc08d;
+      }
+
+      &.React {
+        background: #61dafb20;
+        border-color: #61dafb40;
+        color: #61dafb;
+      }
+
+      &.TypeScript {
+        color: #3178c6;
+        background: #3178c620;
+        border-color: #3178c640;
+      }
+
+      &.Canvas {
+        background: #ffce5620;
+        border-color: #ffce5640;
+        color: #ffce56;
+      }
+
+      &.Pinia {
+        background: #dea58420;
+        border-color: #dea58440;
+        color: #dea584
+      }
+    }
+  }
+}
+
+.info {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(249, 249, 249, .6);
+  position: relative;
+
+  .start {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+}
+
+.demo {
+  width: 100%;
+  height: 192px;
+  border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 16px;
+  color: rgba(249, 249, 249, .6);
+
+  a {
+    color: rgba(249, 249, 249, .6);
+  }
+
+  .icon {
+    font-size: 18px;
+    padding: 2px;
+  }
+
+  .release {
+    background: linear-gradient(45deg, #f1f105, #84f404, #00ff9d, #84ee03);
+    background-clip: text;
+    color: transparent;
+  }
+
+  .github {
+    .icon {
+      font-size: 20px;
+    }
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label {
+    margin: 0 2px;
+  }
+
+}

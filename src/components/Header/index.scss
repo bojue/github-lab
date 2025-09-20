@@ -1,0 +1,17 @@
+.header {
+  height: 68px;
+  line-height: 68px;
+  padding: 0 40px;
+  border-bottom: 1px solid rgb(24 28 40);
+  background: rgb(15 17 24 / 0.8);
+}
+
+.user-label {
+  font-size: 2.25rem;
+  line-height: 1.75rem;
+  background: linear-gradient(90deg, #00ff9d, #00b36b, #00ff9d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
