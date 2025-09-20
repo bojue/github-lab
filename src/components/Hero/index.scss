@@ -1,15 +1,19 @@
 .hero {
+  z-index: 1;
   color: rgb(226 232 240);
   width: 100%;
   justify-content: center;
   display: flex;
+  margin-top: 68px;
 
   .content {
+      z-index: 1;
     width: 72rem;
     display: grid;
     grid-template-columns: 1fr;
 
     .content-left {
+        z-index: 1;
       .flow {
         color: rgb(226 232 240);
         background: rgb(24 28 40);

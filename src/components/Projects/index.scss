@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   .content {
+    z-index: 1;
     width: 72rem;
     display: flex;
     flex-wrap: wrap;

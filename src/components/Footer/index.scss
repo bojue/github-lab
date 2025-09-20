@@ -1,6 +1,7 @@
 .footer {
   .circle {
-    position: absolute;
+      z-index: 0;
+    position: fixed;
     top: 204px;
     left: -100px;
     width: 151px;
@@ -10,8 +11,9 @@
   }
 
   .square {
-    position: absolute;
-    top: -40px;
+      z-index: 0;
+    position: fixed;
+    top: 60px;
     right: 100px;
     width: 100px;
     height: 100px;
