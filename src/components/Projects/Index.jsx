@@ -27,7 +27,7 @@ function Projects() {
       info: '可视化组态编辑器',
       techStack: ['Angular', 'TypeScript'],
       demo_img: webEditor,
-      demo_url: 'https://bojue.github.io/Web-Editor',
+      github: "https://github.com/bojue/Web-Editor",
       demo_state: false
     }, {
       name: "BaseMap",
