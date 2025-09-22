@@ -3,7 +3,7 @@ import { IconGithubLogo, IconArrowUpRight } from '@douyinfe/semi-icons'
 import Right from '@/components/Hero/Right'
 import './Index.scss'
 
-function Hero() {
+function TechStack() {
   const [count, setCount] = useState(0)
 
   return (
@@ -24,12 +24,9 @@ function Hero() {
             </a>
           </div>
         </div>
-        {/* <div className="content-right">
-          <Right/>
-        </div> */}
       </div>
     </section>
   )
 }
 
-export default Hero
+export default TechStack

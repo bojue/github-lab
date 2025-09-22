@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import TechStack from '@/components/TechStack'
 import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
 
@@ -11,6 +12,7 @@ function Home() {
     <>
       <Header/>
       <Hero/>
+      <TechStack/>
       <Projects/>
       <Footer/>
     </>

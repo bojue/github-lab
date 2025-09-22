@@ -3,8 +3,13 @@ import { IconGithubLogo, IconArrowUpRight } from '@douyinfe/semi-icons'
 import './Index.scss'
 
 export default function Project(props) {
-  const [count, setCount] = useState(0)
+  const [ state, setState] = useState('stars')
   const { project, index } = props;
+
+  const changeState = () => {
+    const nextState = state == 'stars' ? 'forks' : 'stars' 
+    setState(nextState)
+  }
 
   return (
     <div className={ 
@@ -19,9 +24,9 @@ export default function Project(props) {
         {project.info}
         {
           project?.github && 
-          <div className="start">
+          <div className="start" key={state} onClick={() => changeState()} title='点击切换统计指标'>
           <img src={
-            `https://img.shields.io/github/stars/bojue/${project.name}.svg?style=social`
+            `https://img.shields.io/github/${state}/bojue/${project.name}.svg?style=social`
           } alt=""></img>
         </div>
         }
@@ -45,7 +50,7 @@ export default function Project(props) {
       <img className='demo' src={project.demo_img} alt="" />
       <div className="footer">
         {
-          project?.state === 'toBeRelease' && <div class="release">
+          project?.state === 'toBeRelease' && <div className="release">
             商业产品待上线</div>
         }
         {

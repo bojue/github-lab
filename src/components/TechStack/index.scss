@@ -1,4 +1,4 @@
-.hero {
+.stack {
   z-index: 1;
   color: rgb(226 232 240);
   width: 100%;
@@ -16,8 +16,6 @@
       z-index: 1;
 
       .flow {
-        // color: rgb(226 232 240);
-        // background: rgb(24 28 40);
         border: 1px solid rgb(0 255 157 / 0.2);
         background: linear-gradient(90deg, #00ff9d, #00b36b);
         color: black;
@@ -60,5 +58,38 @@
 .content-right {
   .right-content {
     color: #00b36b;
+  }
+}
+.stack-item {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+  .label {
+    display: flex;
+    flex: 0 0 100px;
+  }
+  .progress {
+    display: flex;
+    flex: 0 0 20rem;
+    height: 13px;
+    background: rgb(24, 28, 40);
+    border-radius: 10px;
+    // border: 1px solid #747bff;
+    box-shadow: 0px 0px 5px #00b36b9e;
+    position: relative;
+    .val {
+      top: -13px;
+      position: absolute;
+      font-size: 14px;
+      color: rgb(226, 232, 240);
+      width: 60px;
+    }
+  }
+  .stack-process {
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, #00b36b,#00b36b, #00ff9d);
   }
 }

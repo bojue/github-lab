@@ -46,7 +46,7 @@ function Projects() {
       demo_url: 'https://bojue.github.io/canvas-excel'
     }, {
       name: "M-Charts",
-      info: '前端Charts实现',
+      info: '原生Canvas实现Charts调研',
       techStack: ['React', 'Canvas'],
       github: "https://github.com/bojue/M-Charts",
       demo_img: 'https://user-images.githubusercontent.com/14350577/156899401-d2c10722-c14a-40ca-9377-69aa9ce2b2e0.png',
