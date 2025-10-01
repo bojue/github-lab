@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { IconGithubLogo, IconArrowUpRight } from '@douyinfe/semi-icons'
-import Right from '@/components/Hero/Right'
+import SkillRender from '@/components/SkillRender'
 import './Index.scss'
 
 function Hero() {
@@ -15,10 +14,6 @@ function Hero() {
     label: 'Angular',
     process: 80
   }, 
-  // {
-  //   label: 'Node',
-  //   process: 60
-  // }, 
   {
     label: 'Python',
     process: 60
@@ -27,7 +22,7 @@ function Hero() {
   return (
     <section className='stack'>
       <div className="content">
-        <div className="content-left">
+        <div className="content-left c-child">
           <div className="title">
             我的<span className="lab">技术栈</span>
           </div>
@@ -64,6 +59,9 @@ function Hero() {
    
             </div>
           </div>
+        </div>
+        <div className="content-right c-child">
+          {/* <SkillRender/> */}
         </div>
       </div>
     </section>
