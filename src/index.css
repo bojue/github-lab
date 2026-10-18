@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #3370ff;
+    --color-primary-hover: #4c7dff;
+    --color-primary-active: #245bdb;
+    --color-primary-light: rgba(51, 112, 255, 0.08);
+
+    /* Light theme by default (Feishu Style), dark via body default vars */
+    --bg-page: #0f1117;
+    --bg-card: #181b22;
+    --bg-card-hover: #20242e;
+    --bg-header: rgba(15, 17, 23, 0.88);
+    --border-color: #262b36;
+    --border-color-hover: #363d4d;
+    --text-primary: #f2f3f5;
+    --text-regular: #c9cdd4;
+    --text-secondary: #86909c;
+    --text-muted: #5a6474;
+  }
+
+  body.theme-light {
+    --bg-page: #f7f8fa;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fafafa;
+    --bg-header: rgba(255, 255, 255, 0.92);
+    --border-color: #e5e6eb;
+    --border-color-hover: #c9cdd4;
+    --text-primary: #1d2129;
+    --text-regular: #4e5969;
+    --text-secondary: #86909c;
+    --text-muted: #b7bec9;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', Consolas, Menlo, Monaco, monospace;
+  }
+}
+
+/* Feishu Style Card: soft lift on hover */
+.semi-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  transition: all 0.25s cubic-bezier(0.4, 0.14, 0.3, 1);
+}
+
+.semi-card:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+body.theme-light .semi-card:hover {
+  box-shadow: 0 12px 32px rgba(31, 35, 41, 0.1);
+}
+
+/* Thumbnail skeleton shimmer */
+@keyframes thumb-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.thumb-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-page) 25%,
+    var(--bg-card-hover) 37%,
+    var(--bg-page) 63%
+  );
+  background-size: 200% 100%;
+  animation: thumb-shimmer 1.4s ease infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

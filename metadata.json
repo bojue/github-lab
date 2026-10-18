@@ -1,0 +1,6 @@
+{
+  "name": "Bojue's Lab - 前端工程与低代码实验室",
+  "description": "Bojue's Lab 前端工程与开源项目实验室。专注低代码可视化构建器、动态表单、IDC机房2.5D组态、Canvas电子表格及高性能图表引擎研发。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
